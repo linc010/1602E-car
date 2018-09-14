@@ -63,7 +63,8 @@ export default {
         login(){
             if(this.flag){
                 let obj=JSON.stringify({name:this.username,pass:this.password})
-                window.sessionStorage.setItem("login",obj)
+                window.sessionStorage.setItem("login",obj);
+                _hmt.push(['_trackEvent', ' 车轮', 'tap', '登录点击']);
                 this.$router.push({
                     path:"/home"
                 })

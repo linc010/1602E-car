@@ -51,11 +51,22 @@
         function Obj(){
 
         }
-        console.log(Obj.prototype)
+        //console.log(Obj.prototype)
         let a=new Obj();
-        console.log(a)
+        //console.log(a)
 
 
+
+        function Add(){
+            this.name="22"  
+        }
+        
+        let adds=new Add();
+ 
+       
+        console.log(adds.__proto__.constructor)
+        console.log(Add.prototype.constructor.__proto__.__proto__)
+        
     </script>
 </body>
 </html>
